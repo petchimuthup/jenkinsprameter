@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example Deploy') {
             when {
-                branch 'production'
+                branch 'main'
                 environment name: 'DEPLOY_TO', value: 'production'
             }
             steps {
