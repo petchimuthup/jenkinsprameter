@@ -6,9 +6,9 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Example Deploy') {
+        stage('Deploy') {
             when {
-                branch 'main'
+                branch 'production'
             }
                 steps {
                     echo 'Deploying main branch'
