@@ -9,10 +9,11 @@ pipeline {
         stage('Example Deploy') {
             when {
                 branch 'production'
-                    steps {
+                    
+                }
+                steps {
                 echo 'Deploying'
             }
-                }
             
         }
     }
