@@ -9,10 +9,13 @@ pipeline {
         stage('Example Deploy') {
             when {
                 branch 'production'
-                    
                 }
-                steps {
-                echo 'Deploying production'
+            parallel {
+                stage('deploy production branch') {
+                    steps {
+                        echo 'Deploying production'
+                    }
+                }
             }
             
         }
