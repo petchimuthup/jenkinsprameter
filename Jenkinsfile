@@ -11,7 +11,7 @@ pipeline {
                 branch 'production'
             }
                 steps {
-                    echo 'Deploying main branch'
+                    echo 'Deploying'
                 }    
         }
     }
