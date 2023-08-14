@@ -17,6 +17,10 @@ pipeline {
                     }
                 }
             }
+            stage('verify') {
+               steps {
+                   echo 'welcome'
+               }
             
         }
     }
